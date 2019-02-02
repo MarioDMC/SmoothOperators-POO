@@ -11,4 +11,10 @@ public class mainController {
         return "main-menu";
 
     }
+    @RequestMapping("/workingtimes")
+    public String workingTimes(){
+        return "workingtimes";
+
+    }
+
 }
