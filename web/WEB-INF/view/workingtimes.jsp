@@ -1,7 +1,9 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="es-MX">
 <head>
     <meta charset="UTF-8">
+    <link href="<c:url value="/resources/css/estilos.css" />" rel="stylesheet">
     <title>Horario Restaurante</title>
 </head>
 <body>
