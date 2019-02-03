@@ -44,9 +44,6 @@ Encuentre su mesa para cualquier ocasión
             </div>
             <input type="text" class="form-control" placeholder="Ubicación" aria-label="Location" aria-describedby="basic-addon1">
         </div>
-        <div class="input-group alert-danger">
-            <a href="#" class="alert-link">¿Desea utilizar su ubicación actual?</a><img src="${pageContext.request.contextPath}/resources/img/location_link.png" alt="location" class="ico-link">
-        </div>
         <div class="row button">
             <div class="col-lg-8 offset-sm-2 boton">
                 <button type="submit" class="btn btn-danger btn-sm"><img src="${pageContext.request.contextPath}/resources/img/search_big.png" alt="search" id="search">ENCONTRAR MESA</button>
@@ -54,25 +51,6 @@ Encuentre su mesa para cualquier ocasión
         </div>
     </form>
 </div>
-<div class="container-fluid">
-    <div class="row">
-        <h3 class="titles">Gastronomía Mexicana</h3>
-    </div>
-    <div class="rectangulo"></div>
-</div>
-<div class="container-fluid">
-    <div class="jumbotron-fluid">
-        <div class="row ml-5 mt-5">
-            <img src="${pageContext.request.contextPath}/resources/img/slider-1.jpg" alt="slider1" class="images-main mr-3">
-            <img src="${pageContext.request.contextPath}/resources/img/slider-2.jpg" alt="slider2" class="images-main mr-3">
-            <img src="${pageContext.request.contextPath}/resources/img/slider-3.jpg" alt="slider3" class="images-main mr-3">
-            <img src="${pageContext.request.contextPath}/resources/img/slider-4.jpg" alt="slider4" class="images-main mr-3">
-        </div>
-    </div>
-</div>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/javascript.js"></script>
 </body>
