@@ -1,8 +1,10 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html  lang="es-MX">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <title>Horario Restaurante</title>
 </head>
 <body>
