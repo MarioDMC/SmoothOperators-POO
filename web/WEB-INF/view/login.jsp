@@ -7,7 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <title>Login Smooth-Operators</title>
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 
 </head>
@@ -19,14 +18,15 @@
         </div>
     </div>
 </header>
-<div class="contenedor-form">
+<div class="jumbotron-fluid wallpaperlogin">
+<div class="contenedor-form" class="mt-5" >
     <div class="toggle">
         <span>Crear Cuenta</span>
     </div>
 
     <div class="formulario">
         <h2>Iniciar Sesión</h2>
-        <form action="#">
+        <form action="#" class="mt-5">
             <input type="text" placeholder="Usuario" required>
             <input type="password" placeholder="Contraseña" required>
             <button type="submit" class="btn btn-danger btn-sm">INICIAR SESIÓN</button>
@@ -35,7 +35,7 @@
 
     <div class="formulario">
         <h2>Crea tu Cuenta</h2>
-        <form action="#">
+        <form action="#" class="mt-5">
             <input type="text" placeholder="Usuario" required>
 
             <input type="password" placeholder="Contraseña" required>
@@ -48,7 +48,7 @@
 
         </form>
     </div>
-    <div>
+    </div>
 </div>
 </div>
 <script src="<c:url value="/resources/js/jquery-3.1.1.min.js" />"></script>

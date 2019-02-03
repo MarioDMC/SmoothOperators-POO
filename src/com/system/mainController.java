@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class mainController {
 
-    @RequestMapping("/")
-    public String index(HttpServletRequest request, Model model){
-        return "main-menu";
+    @RequestMapping("/form")
+    public String form(HttpServletRequest request, Model model){
+        return "form";
     }
 
     @RequestMapping("/workingtimes")

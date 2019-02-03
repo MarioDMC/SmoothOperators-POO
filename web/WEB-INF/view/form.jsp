@@ -19,12 +19,12 @@
         <nav class="col-lg-7 offset-sm-2">
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link"><img src="<c:url value="/resources/img/calendar.png" />" alt="calendario-image" class="icono"></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><img src="<c:url value="/resources/img/login.png" />" alt="login-image" class="icono"></a></li>
+                <li class="nav-item"><a href="login" class="nav-link"><img src="<c:url value="/resources/img/login.png" />" alt="login-image" class="icono"></a></li>
             </ul>
         </nav>
     </div>
 </header>
-<div class="jumbotron-fluid wallpaper">
+<div class="jumbotron-fluid wallpaperform">
 Encuentre su mesa para cualquier ocasión
     <form action="reservacion" class="mt-5">
         <div class="input-group mb-1">
