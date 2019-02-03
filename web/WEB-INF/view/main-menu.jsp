@@ -51,6 +51,25 @@ Encuentre su mesa para cualquier ocasión
         </div>
     </form>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <h3 class="titles">Gastronomía Mexicana</h3>
+    </div>
+    <div class="rectangulo"></div>
+</div>
+<div class="container-fluid">
+    <div class="jumbotron-fluid">
+        <div class="row ml-5 mt-5">
+            <img src="${pageContext.request.contextPath}/resources/img/slider-1.jpg" alt="slider1" class="images-main mr-3">
+            <img src="${pageContext.request.contextPath}/resources/img/slider-2.jpg" alt="slider2" class="images-main mr-3">
+            <img src="${pageContext.request.contextPath}/resources/img/slider-3.jpg" alt="slider3" class="images-main mr-3">
+            <img src="${pageContext.request.contextPath}/resources/img/slider-4.jpg" alt="slider4" class="images-main mr-3">
+        </div>
+    </div>
+</div>
+<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="${pageContext.request.contextPath}/resources/bootstrap/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/bootstrap/js/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/javascript.js"></script>
 </body>
