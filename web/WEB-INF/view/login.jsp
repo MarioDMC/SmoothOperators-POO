@@ -6,10 +6,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <title>Login Smooth-Operators</title>
-    <link href="<c:url value="/resources/css/estilos.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 
 </head>
 <body>
+<header class="container-fluid container-black">
+    <div class="row">
+        <div class="col-lg-3">
+            <img src="<c:url value="/resources/img/logo.png" />" alt="logo.png" id="logo-smooth" class="img-responsive">
+        </div>
+    </div>
+</header>
 <div class="contenedor-form">
     <div class="toggle">
         <span>Crear Cuenta</span>
@@ -20,7 +29,7 @@
         <form action="#">
             <input type="text" placeholder="Usuario" required>
             <input type="password" placeholder="Contraseña" required>
-            <input type="submit" value="Iniciar Sesión">
+            <button type="submit" class="btn btn-danger btn-sm">INICIAR SESIÓN</button>
         </form>
     </div>
 
@@ -35,7 +44,8 @@
 
             <input type="text" placeholder="Teléfono" required>
 
-            <input type="submit" value="Registrarse">
+               <button type="submit" class="btn btn-danger btn-sm">REGISTRARSE</button>
+
         </form>
     </div>
     <div>
