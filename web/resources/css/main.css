@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
 input, button, select, optgroup, textarea{
     font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    background-color: #EEEEEE;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    height:100%;
+
 }
 
 .icono{
@@ -10,6 +29,7 @@ input, button, select, optgroup, textarea{
 
 .container-black{
     background-color: #222831;
+
 }
 #logo-smooth{
     width: 300px;
@@ -28,4 +48,85 @@ header .nav-link{
 }
 header .nav-item:hover{
     background-color: #393E46;
+}
+
+#myFooter {
+    background-color: #222831;
+    color: white;
+}
+
+#myFooter .row {
+    margin-bottom: 20px;
+}
+
+#myFooter .info{
+    text-align: justify;
+    color: #afb0b1;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1;
+}
+
+#myFooter h5 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter .logo{
+    margin-top: 5px;
+    width: 100px;
+}
+
+#myFooter .second-bar .logo a{
+    color:white;
+    float: left;
+    font-weight: bold;
+    line-height: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .second-bar {
+    text-align: center;
+    background-color: #33373e;
+    text-align: center;
+}
+
+#myFooter .second-bar a {
+    font-size: 10px;
+    color: #9fa3a9;
+    padding: 5px;
+    transition: 0.2s;
+    line-height: 10px;
+}
+
+#myFooter .second-bar a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+
+    #myFooter .info{
+        text-align: center;
+    }
 }

@@ -1,48 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 
-.wallpaperform {
-    background: url("../img/wallpaperform.jpg") no-repeat;
-}
-
 input, button, select, optgroup, textarea{
     font-family: 'Poppins', sans-serif;
-}
-.container-black{
-    background-color: #222831;
-}
-#logo-smooth{
-    width: 300px;
-    margin: 24px 20px;
-}
-header .nav{
-    justify-content: flex-end;
-    color: #cbccd3;
-}
-header .nav-link{
-    font-size: 13px;
-    padding: 0px 0px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #cbccd3;
-    font-weight: bold;
-}
-header .nav-item:hover{
-    background-color: #393E46;
-}
-.icono{
-    width: 34px;
-    margin: 0px 0px;
-    padding-top: 30px;
-}
-.wallpaperform{
-    background-size: cover;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 150px 300px;
-    color: #f7f7f7;
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: -1px -1px 2px #000000;
 }
 
 .form-row .col{
