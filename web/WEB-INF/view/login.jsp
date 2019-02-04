@@ -7,7 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <title>Login Smooth-Operators</title>
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 
 </head>
 <body>

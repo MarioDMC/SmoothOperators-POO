@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/form.css"/>" rel="stylesheet">
     <title>Horario Restaurante</title>
 </head>
 <body>

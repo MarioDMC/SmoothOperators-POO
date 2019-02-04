@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class mainController {
 
+    @RequestMapping("/")
+    public String dashboard(){
+        return "dashboard";
+    }
+
     @RequestMapping("/form")
     public String form(HttpServletRequest request, Model model){
         return "form";

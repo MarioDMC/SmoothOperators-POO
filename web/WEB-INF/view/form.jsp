@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Formulario inicial</title>
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/form.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 </head>
 <body>
 <header class="container-fluid container-black">

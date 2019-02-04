@@ -1,0 +1,31 @@
+input, button, select, optgroup, textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
+.icono{
+    width: 34px;
+    margin: 0px 0px;
+    padding-top: 30px;
+}
+
+.container-black{
+    background-color: #222831;
+}
+#logo-smooth{
+    width: 300px;
+    margin: 24px 20px;
+}
+header .nav{
+    justify-content: flex-end;
+}
+header .nav-link{
+    font-size: 13px;
+    padding: 0px 0px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #cbccd3;
+    font-weight: bold;
+}
+header .nav-item:hover{
+    background-color: #393E46;
+}
