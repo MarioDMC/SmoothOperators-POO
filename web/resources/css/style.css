@@ -9,6 +9,7 @@ input, button, select, optgroup, textarea{
 #logo-smooth{
     width: 300px;
     margin: 24px 20px;
+    background-size: cover;
 }
 header .nav{
     justify-content: flex-end;
@@ -122,6 +123,21 @@ header .nav-item:hover{
     background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 1);
 }
+.btn-sm, .btn-group-sm > .btn{
+    border-radius: 3rem;
+}
+.btn-primary {
+    background-color: #fff;
+    color: #00ADB5;
+    border-color: #00ADB5;
+}
+.btn-primary:hover {
+    background-color: #00ADB5;
+    color: #fff;
+    border-color: #00ADB5;
+}
+/*
 .justify-content-between {
     margin-right: 750px;
 }
+*/
