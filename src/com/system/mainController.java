@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class mainController {
@@ -11,6 +13,23 @@ public class mainController {
     @RequestMapping("/")
     public String index(HttpServletRequest request, Model model){
         return "main-menu";
+    }
+
+    @RequestMapping("/dashboard")
+    public String dashboard(HttpServletRequest request, Model model){
+        int new_reservations, total_reservations;
+        List<String> reservaciones = new ArrayList<String>();
+        reservaciones.add("Daniel");
+        reservaciones.add("Diana");
+        reservaciones.add("Mario");
+        reservaciones.add("Karen");
+        reservaciones.add("Hugo");
+        reservaciones.add("Moy");
+        new_reservations = 3;
+        total_reservations = reservaciones.size();
+        model.addAttribute("nuevas_reservaciones",new_reservations);
+        model.addAttribute("total_reservaciones",total_reservations);
+        return "dashboard";
     }
 
     @RequestMapping("/workingtimes")

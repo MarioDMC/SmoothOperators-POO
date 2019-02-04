@@ -15,8 +15,8 @@
         </div>
         <nav class="col-lg-7 offset-sm-2">
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link"><img src="${pageContext.request.contextPath}/resources/img/calendar.png" alt="calendario-image" class="icono"></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><img src="${pageContext.request.contextPath}/resources/img/login.png" alt="login-image" class="icono"></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><img src="${pageContext.request.contextPath}/resources/img/calendar.png" alt="calendario-image" class="icono"></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><img src="${pageContext.request.contextPath}/resources/img/login.png" alt="login-image" class="icono"></a></li>
             </ul>
         </nav>
     </div>

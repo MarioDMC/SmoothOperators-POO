@@ -12,6 +12,7 @@ input, button, select, optgroup, textarea{
 }
 header .nav{
     justify-content: flex-end;
+    color: #cbccd3;
 }
 header .nav-link{
     font-size: 13px;
@@ -100,4 +101,27 @@ header .nav-item:hover{
 .images-main{
     width: 256px;
     height: 256px;
+}
+.circle-color{
+    width: 10px;
+    margin-left: 15px;
+    padding-bottom: 2px;
+}
+.btn-link{
+    color: #222831;
+}
+.card{
+    background-color: #fff;
+    border-radius: 0rem;
+    border: 1px solid rgba(247, 247, 247, 0.125);
+}
+.badge-primary{
+    background-color: #00ADB5;
+}
+.list-group-item{
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.justify-content-between {
+    margin-right: 750px;
 }
