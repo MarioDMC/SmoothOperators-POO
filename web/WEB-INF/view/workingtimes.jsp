@@ -5,9 +5,18 @@
 <html  lang="es-MX">
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
+    <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/form.css"/>" rel="stylesheet">
     <title>Horario Restaurante</title>
 </head>
 <body>
+<header class="container-fluid container-black">
+    <div class="row">
+        <div class="col-lg-3">
+            <img src="<c:url value="/resources/img/logo.png" />" alt="logo.png" id="logo-smooth" class="img-responsive">
+        </div>
+    </div>
+</header>
 <table style="width:100%">
     <tr>
         <th>Día de la semana</th>

@@ -29,17 +29,17 @@
 </style>
 <body>
 
-<nav class="navbar navbar-inverse visible-xs">
+<nav class="navbar flex-column bg-wine">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTab">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="#"><img src="${pageContext.request.contextPath}/resources/img/logo.png" alt="logo"></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" id="MyTab">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Dashboard</a></li>
                 <li><a href="#">Age</a></li>
