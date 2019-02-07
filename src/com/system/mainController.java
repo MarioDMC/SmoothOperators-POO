@@ -15,6 +15,11 @@ public class mainController {
         return "form";
     }
 
+    @RequestMapping("/vista")
+    public String vista(HttpServletRequest request, Model model){
+        return "vista";
+    }
+
     @RequestMapping("/dashboard")
     public String dashboard(HttpServletRequest request, Model model){
         int new_reservations, total_reservations;
