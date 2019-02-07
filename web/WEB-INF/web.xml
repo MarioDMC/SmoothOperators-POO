@@ -6,7 +6,7 @@
 
     <display-name>system</display-name>
 
-    <!-- Spring MVC Configs -->
+       <!-- Spring MVC Configs -->
 
     <!-- Step 1: Configure Spring MVC Dispatcher Servlet -->
     <servlet>
@@ -18,11 +18,26 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-
+    
     <!-- Step 2: Set up URL mapping for Spring MVC Dispatcher Servlet -->
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+    <error-page>
+        <error-code>400</error-code>
+        <location>/WEB-INF/view/400.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/view/404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/view/500.jsp</location>
+    </error-page>
 
 </web-app>

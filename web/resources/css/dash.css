@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+input, button, select, optgroup, textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-row .col{
+    padding-left: 0px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    justify-content: center;
+}
+.form-control{
+    border-radius: 0rem;
+    justify-content: center;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    border: 1px solid #ffffff;
+}
+.input-group-text{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.alert-danger{
+    background-color: transparent;
+}
+.alert-danger .alert-link{
+    color: #ffe28a;
+    font-size: 15px;
+}
+.ico-link{
+    width: 22px;
+    height: 22px;
+}
+.input-group .alert-danger{
+    align-content: center;
+}
+.boton{
+    padding-top: 50px;
+}
+.btn-sm, .btn-group-sm > .btn{
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#search{
+    margin-right: 10px;
+    width: 25px;
+}
+.icono-input{
+    width: 22px;
+}
+.titles{
+    padding: 30px 150px;
+    text-align: left;
+}
+.rectangulo{
+    height: 1px;
+    margin-left: 130px;
+    margin-right: 130px;
+    justify-content: flex-end;
+    background-color: #505167;
+}
+.images-main{
+    width: 256px;
+    height: 256px;
+}
+.circle-color{
+    width: 10px;
+    margin-left: 15px;
+    padding-bottom: 2px;
+}
+.btn-link{
+    color: #222831;
+}
+.card{
+    background-color: #fff;
+    border-radius: 0rem;
+    border: 1px solid rgba(247, 247, 247, 0.125);
+}
+.badge-primary{
+    background-color: #00ADB5;
+}
+.list-group-item{
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.justify-content-between {
+    margin-right: 750px;
+}
