@@ -1,143 +1,490 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: danie
-  Date: 05/02/2019
-  Time: 01:01 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Dashboard</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
-<style>
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px}
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-        background-color: #f1f1f1;
-        height: 100%;
-    }
-
-    /* On small screens, set height to 'auto' for the grid */
-    @media screen and (max-width: 767px) {
-        .row.content {height: auto;}
-    }
-</style>
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+    <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+</head>
 <body>
+<!--
+include file="shared/menu.jsp"
+include file="shared/navbar.jsp"
+-->
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a href="<c:url value="/dashboard"/>">KRONOS BOOKING</a>
+                <div id="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-header">
+                <div class="user-pic">
+                    <img class="img-responsive img-rounded"
+                         src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                         alt="User picture">
+                </div>
+                <div class="user-info">
+          <span class="user-name">Daniel
+            <strong>Rojas</strong>
+          </span>
+                    <span class="user-role">Web developer</span>
+                    <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+                </div>
+            </div>
+            <!-- sidebar-header  -->
+            <div class="sidebar-search">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-menu" placeholder="Search...">
+                        <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="header-menu">
+                        <span>Menú</span>
+                    </li>
+                    <li class="sidebar-dropdown active">
+                        <a href="#">
+                            <i class="fa fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                            <span class="badge badge-pill badge-warning">New</span>
+                        </a>
+                        <div class="sidebar-submenu" style="display:block;">
+                            <ul>
+                                <li>
+                                    <a href="#reservaciones">Reservaciones
+                                        <span class="badge badge-pill badge-success">Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#clientes">Clientes</a>
+                                </li>
+                                <li>
+                                    <a href="#eventos">Próximos eventos</a>
+                                </li>
+                                <li>
+                                    <a href="#reciente">Reservaciones recientes</a>
+                                </li>
+                                <li>
+                                    <a href="#mesas">Mesas disponibles</a>
+                                </li>
+                                <li>
+                                    <a href="#capacidad">Capacidad de mesas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>E-commerce</span>
+                            <span class="badge badge-pill badge-danger">3</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">Products
 
-<nav class="navbar flex-column bg-wine">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTab">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="${pageContext.request.contextPath}/resources/img/logo.png" alt="logo"></a>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders</a>
+                                </li>
+                                <li>
+                                    <a href="#">Credit cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="far fa-gem"></i>
+                            <span>Components</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">General</a>
+                                </li>
+                                <li>
+                                    <a href="#">Panels</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="#">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="#">Forms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-chart-line"></i>
+                            <span>Charts</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">Pie chart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Line chart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bar chart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Histogram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-globe"></i>
+                            <span>Maps</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">Google maps</a>
+                                </li>
+                                <li>
+                                    <a href="#">Open street map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-menu">
+                        <span>Extra</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-book"></i>
+                            <span>Documentation</span>
+                            <span class="badge badge-pill badge-primary">Beta</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-folder"></i>
+                            <span>Examples</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
         </div>
-        <div class="collapse navbar-collapse" id="MyTab">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Dashboard</a></li>
-                <li><a href="#">Age</a></li>
-                <li><a href="#">Gender</a></li>
-                <li><a href="#">Geo</a></li>
-            </ul>
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+            <a href="#">
+                <i class="fa fa-bell"></i>
+                <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-envelope"></i>
+                <span class="badge badge-pill badge-success notification">7</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-cog"></i>
+                <span class="badge-sonar"></span>
+            </a>
+            <a href="#">
+                <i class="fa fa-power-off"></i>
+            </a>
         </div>
-    </div>
-</nav>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="reservaciones">
+        <div class="container-fluid">
+            <h2>Reservaciones</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>Reservaciones nuevas: <b>2</b></p>
+                    <p>Reservaciones totales: <b>3</b></p>
+                </div>
+                <div class="form-group col-md-12">
+                    <h4>Lista de reservaciones</h4>
+                </div>
+                <div class="form-inline">
+                    <button type="button" class="btn btn-info mr-5 my-lg-2">Agregar nuevo</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <form action="#">
+                            <p class="dropdown-item-text">Filtro</p>
+                            <div class="dropdown-divider"></div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">Fecha de inicio:
+                                    <br>
+                                    <input type="date" name="fecha_inicio" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">Fecha de fin:
+                                    <br>
+                                    <input type="date" name="fecha_fin" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">Mesa:
+                                    <input type="number" name="mesa" min="1" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">
+                                    <input type="text" name="correo" class="form-control" placeholder="Correo">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">
+                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">
+                                    <input type="text" name="telefono" class="form-control" placeholder="Teléfono">
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-info ml-3" type="submit">Aplicar filtro</button>
+                            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Cancelar
+                            </button>
+                        </form>
+                    </div>
+                    <form class="form-inline my-2 my-lg-2 align-content-center">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Fecha/Hora</th>
+                        <th scope="col"># personas</th>
+                        <th scope="col"># mesa</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>07.02.2019, 02:21 a.m.</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>Daniel Rojas Soto</td>
+                        <td>danielrojas1032@gmail.com</td>
+                        <td>Confirmado</td>
+                        <td>Editar/Eliminar</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
-<div class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-3 sidenav hidden-xs">
-            <h2>Logo</h2>
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#section1">Dashboard</a></li>
-                <li><a href="#section2">Age</a></li>
-                <li><a href="#section3">Gender</a></li>
-                <li><a href="#section3">Geo</a></li>
-            </ul>
-            <br>
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="clientes">
+        <div class="container-fluid">
+            <h2>Clientes</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>Clientes por llegar: <b>6</b></p>
+                    <p>Mesas reservadas: <b>2</b></p>
+                </div>
+            </div>
         </div>
-        <br>
 
-        <div class="col-sm-9">
-            <div class="well">
-                <h4>Dashboard</h4>
-                <p>Some text..</p>
-            </div>
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="eventos">
+        <div class="container-fluid">
+            <h2>Próximos eventos</h2>
+            <hr>
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="well">
-                        <h4>Users</h4>
-                        <p>1 Million</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="well">
-                        <h4>Pages</h4>
-                        <p>100 Million</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="well">
-                        <h4>Sessions</h4>
-                        <p>10 Million</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="well">
-                        <h4>Bounce</h4>
-                        <p>30%</p>
-                    </div>
+                <div class="form-group col-md-12">
+                    <p>Reservaciones: <b>0</b></p>
+                    <p>Clientes: <b>0</b></p>
+                    <p>Depositado: <b>$0</b></p>
                 </div>
             </div>
+        </div>
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="reciente">
+        <div class="container-fluid">
+            <h2>Reservaciones recientes</h2>
+            <p class="small">Tienes <b>3</b> reservaciones para hoy.</p>
+            <hr>
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="well">
-                        <p>Text</p>
-                        <p>Text</p>
-                        <p>Text</p>
+                <div class="form-group col-md-12">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Bruno Díaz</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">7 de Febrero, 2019 / 15:00</h6>
+                            <hr>
+                            <p class="card-text"><b>Fecha de inicio:<br></b>07/02/2019, 15:00</p>
+                            <p class="card-text"><b>Fecha de fin:<br></b>07/02/2019, 17:00</p>
+                            <p class="card-text"><b># de personas:<br></b>4</p>
+                            <p class="card-text"><b># de mesa:<br></b>17</p>
+                            <p class="card-text"><b>Cantidad depositada:<br></b>$300.00 MXN</p>
+                            <hr>
+                            <a href="#" class="card-link">Detalles de la reservación</a>
+                            <br>
+                            <a href="#" class="card-link">Detalles del cliente</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="well">
-                        <p>Text</p>
-                        <p>Text</p>
-                        <p>Text</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="well">
-                        <p>Text</p>
-                        <p>Text</p>
-                        <p>Text</p>
-                    </div>
+                <div class="form-group col-md-12">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
                 </div>
             </div>
+            <h5>More templates</h5>
+            <hr>
+
             <div class="row">
-                <div class="col-sm-8">
-                    <div class="well">
-                        <p>Text</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="well">
-                        <p>Text</p>
+                <div class="col-md-12">
+                    <h6>Angular 2+ Version</h6>
+                    <div style="width:13rem;">
+                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
+                           class="alert-link">
+                            <img class="card-img-top"
+                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
+                                 alt="Card image cap">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="mesas">
+        <div class="container-fluid">
+            <h2>Mesas disponibles</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
+                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
+                                                             target="_blank">
+                        Github</a>, it contains more themes and background image option</p>
+                </div>
+                <div class="form-group col-md-12">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                </div>
+            </div>
+            <h5>More templates</h5>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h6>Angular 2+ Version</h6>
+                    <div style="width:13rem;">
+                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
+                           class="alert-link">
+                            <img class="card-img-top"
+                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
+                                 alt="Card image cap">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="capacidad">
+        <div class="container-fluid">
+            <h2>Capacidad de las mesas</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
+                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
+                                                             target="_blank">
+                        Github</a>, it contains more themes and background image option</p>
+                </div>
+                <div class="form-group col-md-12">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                </div>
+            </div>
+            <h5>More templates</h5>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h6>Angular 2+ Version</h6>
+                    <div style="width:13rem;">
+                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
+                           class="alert-link">
+                            <img class="card-img-top"
+                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
+                                 alt="Card image cap">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- page-content" -->
 </div>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/popper.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/javascript.js"></script>
+
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/js/javascript.js"/>"></script>
 </body>
 </html>

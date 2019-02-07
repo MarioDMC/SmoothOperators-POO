@@ -1,164 +1,490 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
+    <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 </head>
 <body>
-<header class="container-fluid container-black bg-winer pt-4 pb-4">
-    <div class="row">
-        <div class="col-lg-3">
-            <img src="${pageContext.request.contextPath}/resources/img/logo.png" alt="logo.png" id="logo-smooth" class="img-responsive">
+<!--
+include file="shared/menu.jsp"
+include file="shared/navbar.jsp"
+-->
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a href="<c:url value="/dashboard"/>">KRONOS BOOKING</a>
+                <div id="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-header">
+                <div class="user-pic">
+                    <img class="img-responsive img-rounded"
+                         src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                         alt="User picture">
+                </div>
+                <div class="user-info">
+          <span class="user-name">Daniel
+            <strong>Rojas</strong>
+          </span>
+                    <span class="user-role">Web developer</span>
+                    <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+                </div>
+            </div>
+            <!-- sidebar-header  -->
+            <div class="sidebar-search">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-menu" placeholder="Search...">
+                        <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="header-menu">
+                        <span>Menú</span>
+                    </li>
+                    <li class="sidebar-dropdown active">
+                        <a href="#">
+                            <i class="fa fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                            <span class="badge badge-pill badge-warning">New</span>
+                        </a>
+                        <div class="sidebar-submenu" style="display:block;">
+                            <ul>
+                                <li>
+                                    <a href="#reservaciones">Reservaciones
+                                        <span class="badge badge-pill badge-success">Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#clientes">Clientes</a>
+                                </li>
+                                <li>
+                                    <a href="#eventos">Próximos eventos</a>
+                                </li>
+                                <li>
+                                    <a href="#reciente">Reservaciones recientes</a>
+                                </li>
+                                <li>
+                                    <a href="#mesas">Mesas disponibles</a>
+                                </li>
+                                <li>
+                                    <a href="#capacidad">Capacidad de mesas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>E-commerce</span>
+                            <span class="badge badge-pill badge-danger">3</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">Products
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders</a>
+                                </li>
+                                <li>
+                                    <a href="#">Credit cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="far fa-gem"></i>
+                            <span>Components</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">General</a>
+                                </li>
+                                <li>
+                                    <a href="#">Panels</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="#">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="#">Forms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-chart-line"></i>
+                            <span>Charts</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">Pie chart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Line chart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bar chart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Histogram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fa fa-globe"></i>
+                            <span>Maps</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">Google maps</a>
+                                </li>
+                                <li>
+                                    <a href="#">Open street map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-menu">
+                        <span>Extra</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-book"></i>
+                            <span>Documentation</span>
+                            <span class="badge badge-pill badge-primary">Beta</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-folder"></i>
+                            <span>Examples</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
         </div>
-        <nav class="col-lg-7 offset-sm-2">
-            <ul class="nav">
-                <!-- LISTA DE LINKS -->
-            </ul>
-        </nav>
-    </div>
-</header>
-    <div class="accordion" id="accordionExample">
-        <div class="card border-0">
-            <div class="card-header bg-wine pt-4 pb-4" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link bg-wine" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Dashboard<img src="${pageContext.request.contextPath}/resources/img/green_circle.png" alt="active" class="circle-color">
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+            <a href="#">
+                <i class="fa fa-bell"></i>
+                <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-envelope"></i>
+                <span class="badge badge-pill badge-success notification">7</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-cog"></i>
+                <span class="badge-sonar"></span>
+            </a>
+            <a href="#">
+                <i class="fa fa-power-off"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="reservaciones">
+        <div class="container-fluid">
+            <h2>Reservaciones</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>Reservaciones nuevas: <b>2</b></p>
+                    <p>Reservaciones totales: <b>3</b></p>
+                </div>
+                <div class="form-group col-md-12">
+                    <h4>Lista de reservaciones</h4>
+                </div>
+                <div class="form-inline">
+                    <button type="button" class="btn btn-info mr-5 my-lg-2">Agregar nuevo</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                </h2>
-            </div>
-
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body bg-wine">
-                    <ul class="list-group">
-                        <li class="list-group-item d-inline-flex justify-content-between align-items-center bg-wine">
-                            Nuevas:
-                            <span>${nuevas_reservaciones}</span>
-                            Total:
-                            <span>${total_reservaciones}</span>
-                            Reservaciones hechas hoy:
-                            <span>${nuevas_reservaciones}</span>
-                            <a href="#" class="btn btn-primary btn-sm btn-outline m-n">Ver el programa de hoy</a>
-                        </li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <form action="#">
+                            <p class="dropdown-item-text">Filtro</p>
+                            <div class="dropdown-divider"></div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">Fecha de inicio:
+                                    <br>
+                                    <input type="date" name="fecha_inicio" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">Fecha de fin:
+                                    <br>
+                                    <input type="date" name="fecha_fin" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">Mesa:
+                                    <input type="number" name="mesa" min="1" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">
+                                    <input type="text" name="correo" class="form-control" placeholder="Correo">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">
+                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-group row dropdown-item">
+                                <div class="col-sm-10">
+                                    <input type="text" name="telefono" class="form-control" placeholder="Teléfono">
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-info ml-3" type="submit">Aplicar filtro</button>
+                            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Cancelar
+                            </button>
+                        </form>
+                    </div>
+                    <form class="form-inline my-2 my-lg-2 align-content-center">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </div>
-
-                <div class="card-columns bg-wine">
-                    <div class="card bg-orange">
-                        <!--Insertar imagen si se requiere aquí-->
-                        <div class="card-body">
-                            <h5 class="card-title">Titulares de reservaciones</h5>
-                            <p class="card-text pl-3 pt-3">Daniel - 04/02/2019</p>
-                            <p class="card-text pl-3">Diana - 04/02/2019</p>
-                            <p class="card-text pl-3">Karen - 04/02/2019</p>
-                            <p class="card-text pl-3">Mario - 04/02/2019</p>
-                        </div>
-                    </div>
-                    <div class="card p-3 bg-orange">
-                        <blockquote class="blockquote mb-0 card-body">
-                            <p>Próximo: Daniel - <b>04/02/2019</b></p>
-                            <p class="card-text">
-                                Last updated 3 mins ago
-                            </p>
-                        </blockquote>
-                    </div>
-                    <div class="card text-center bg-vclaro">
-                        <div class="card-body">
-                            <h5 class="card-title">Clientes</h5>
-                            <p class="card-text pt-3">
-                                Clientes por llegar:
-                                <span><b>3</b></span>
-                            </p><p>
-                            Mesas asignadas:
-                            <span><b>1</b></span>
-                        </p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-vclaro text-center p-3">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                            <footer class="blockquote-footer text-white">
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <!-- HERE -->
-                    <div class="card text-center bg-vclaro">
-                        <div class="card-body">
-                            <h5 class="card-title">Clientes</h5>
-                            <p class="card-text pt-3">
-                                Clientes por llegar:
-                                <span class="badge badge-dark">3</span>
-                                </p><p>
-                                Mesas asignadas:
-                                <span class="badge badge-dark">1</span>
-                            </p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card p-3 text-right bg-piel">
-                        <h5 class="card-title">Eventos para la semana próxima</h5>
-                        <blockquote class="blockquote mb-0">
-                                <ul class="list-unstyled pt-2 pb-2">
-                                    <li>Boda Erno Rubik</li>
-                                    <li>Cumpleaños de Carlitos</li>
-                                </ul>
-                            <p class="card-text">
-                                    Last updated 3 mins ago
-                            </p>
-                        </blockquote>
-                    </div>
-                    <div class="card bg-piel">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                </div>
-
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Fecha/Hora</th>
+                        <th scope="col"># personas</th>
+                        <th scope="col"># mesa</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>07.02.2019, 02:21 a.m.</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>Daniel Rojas Soto</td>
+                        <td>danielrojas1032@gmail.com</td>
+                        <td>Confirmado</td>
+                        <td>Editar/Eliminar</td>
+                    </tr>
+                </table>
             </div>
-
         </div>
-        <div class="card">
-            <div class="card-header bg-amarillo pt-3 pb-3" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed bg-amarillo" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Reportes - Vouchers
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="clientes">
+        <div class="container-fluid">
+            <h2>Clientes</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>Clientes por llegar: <b>6</b></p>
+                    <p>Mesas reservadas: <b>2</b></p>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header bg-green pt-2 pb-2" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed bg-green" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Usuarios
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="eventos">
+        <div class="container-fluid">
+            <h2>Próximos eventos</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>Reservaciones: <b>0</b></p>
+                    <p>Clientes: <b>0</b></p>
+                    <p>Depositado: <b>$0</b></p>
                 </div>
             </div>
         </div>
-    </div>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/popper.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/javascript.js"></script>
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="reciente">
+        <div class="container-fluid">
+            <h2>Reservaciones recientes</h2>
+            <p class="small">Tienes <b>3</b> reservaciones para hoy.</p>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Bruno Díaz</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">7 de Febrero, 2019 / 15:00</h6>
+                            <hr>
+                            <p class="card-text"><b>Fecha de inicio:<br></b>07/02/2019, 15:00</p>
+                            <p class="card-text"><b>Fecha de fin:<br></b>07/02/2019, 17:00</p>
+                            <p class="card-text"><b># de personas:<br></b>4</p>
+                            <p class="card-text"><b># de mesa:<br></b>17</p>
+                            <p class="card-text"><b>Cantidad depositada:<br></b>$300.00 MXN</p>
+                            <hr>
+                            <a href="#" class="card-link">Detalles de la reservación</a>
+                            <br>
+                            <a href="#" class="card-link">Detalles del cliente</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                </div>
+            </div>
+            <h5>More templates</h5>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h6>Angular 2+ Version</h6>
+                    <div style="width:13rem;">
+                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
+                           class="alert-link">
+                            <img class="card-img-top"
+                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
+                                 alt="Card image cap">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="mesas">
+        <div class="container-fluid">
+            <h2>Mesas disponibles</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
+                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
+                                                             target="_blank">
+                        Github</a>, it contains more themes and background image option</p>
+                </div>
+                <div class="form-group col-md-12">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                </div>
+            </div>
+            <h5>More templates</h5>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h6>Angular 2+ Version</h6>
+                    <div style="width:13rem;">
+                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
+                           class="alert-link">
+                            <img class="card-img-top"
+                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
+                                 alt="Card image cap">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- page-content" -->
+    <!-- sidebar-wrapper  -->
+    <main class="page-content" id="capacidad">
+        <div class="container-fluid">
+            <h2>Capacidad de las mesas</h2>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
+                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
+                                                             target="_blank">
+                        Github</a>, it contains more themes and background image option</p>
+                </div>
+                <div class="form-group col-md-12">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
+                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
+                </div>
+            </div>
+            <h5>More templates</h5>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h6>Angular 2+ Version</h6>
+                    <div style="width:13rem;">
+                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
+                           class="alert-link">
+                            <img class="card-img-top"
+                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
+                                 alt="Card image cap">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- page-content" -->
+</div>
+
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/js/javascript.js"/>"></script>
 </body>
 </html>
