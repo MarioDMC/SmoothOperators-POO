@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-war" name="UNID_201920-smooth-operators:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/UNID_201920_smooth_operators_war_exploded</output-path>
-    <root id="root">
-      <element id="javaee-facet-resources" facet="UNID_201920-smooth-operators/web/Web" />
-    </root>
-  </artifact>
-</component>
