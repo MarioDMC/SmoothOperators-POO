@@ -26,7 +26,7 @@
 </header>
 <h2 align="center"> Tabla de lista del restaurante </h2>
 <div class="container">
-    <table  align="center">
+    <table align="center">
         <tr>
             <td>
             <th>Nombre</th>
@@ -40,10 +40,10 @@
         </tr>
         <tr>
             <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
-                <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
-                    <label>
-                        <input type="text" data-name="name" class="form-control pj-selector-editable" value="1" style="">
-                    </label></td>
+            <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
+                <label>
+                    <input type="text" data-name="name" class="form-control pj-selector-editable" value="1" style="">
+                </label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
                     <input type="text" data-name="name" class="form-control pj-selector-editable" value="1" style="">
@@ -55,44 +55,51 @@
 
             <td>
                 <div class="m-t-xs text-right">
-                    <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                        <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+                    <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+                       class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                        <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                             alt="fa fa-pencil.png">
                     </a>
-            <td>
-                <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
-                    <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
-                </a>
-</div>
+                    <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+                       class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+                        <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash"
+                             alt="fa fa-trash.png">
+                    </a>
+                </div>
             </td>
 
         <tr>
             <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
-                <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
-                    <label>
-                        <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
-                    </label></td>
-             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
-                 <label>
-                     <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
-                 </label></td>
-             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
-                 <label>
-                     <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
-                 </label></td>
+            <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
+                <label>
+                    <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
+                </label></td>
+            <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
+                <label>
+                    <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
+                </label></td>
+            <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
+                <label>
+                    <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
+                </label></td>
 
             <td>
-                <div class="m-t-xs text-right" >
-                    <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                        <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+                <div class="m-t-xs text-right">
+                    <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+                       class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                        <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                             alt="fa fa-pencil.png">
                     </a>
             <td>
-                <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
-                    <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
+                <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+                   class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+                    <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash"
+                         alt="fa fa-trash.png">
                 </a>
-            </div>
-            </td>
+</div>
+</td>
 
-        </tr>
+</tr>
 
 <tr>
     <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
@@ -111,11 +118,14 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
         </div>
@@ -140,14 +150,17 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
@@ -169,14 +182,17 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
@@ -198,14 +214,17 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
@@ -227,14 +246,17 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
@@ -256,14 +278,16 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
                 <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
@@ -285,14 +309,17 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
@@ -314,25 +341,28 @@
 
     <td>
         <div class="m-t-xs text-right">
-            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
+            <a href="index.php?controller=pjAdminTables&amp;action=pjActionUpdate&amp;id=1"
+               class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil"
+                     alt="fa fa-pencil.png">
             </a>
     <td>
-        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
+        <a href="index.php?controller=pjAdminTables&amp;action=pjActionDeleteTable&amp;id=1"
+           class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
             <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
         </a>
-    </div>
+        </div>
     </td>
 
 </tr>
 </table>
 </div>
-            </td>
-        </tr>
-    </div>
-    <div class="col-lg-8 offset-sm-2 button">
-    <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
-    </div>
+</td>
+</tr>
+</div>
+<div class="col-lg-8 offset-sm-2 button">
+    <button type="submit" class="btn btn-danger btn-sm"> Guardar</button>
+</div>
 
 </body>
 </html>

@@ -27,23 +27,7 @@ public class mainController {
 
     @RequestMapping("/dashboard")
     public String dashboard(HttpServletRequest request, Model model){
-        //List<String> reservaciones = new ArrayList<String>();
-        int new_reservations, total_reservations;
-        HashMap<Integer,String> reservaciones = new HashMap<Integer,String>();
-        reservaciones.put(0,"Daniel");
-        reservaciones.put(1,"Diana");
-        reservaciones.put(2,"Mario");
-        reservaciones.put(3,"Karen");
-        reservaciones.put(4,"Hugo");
-        reservaciones.put(5,"Moy");
-        total_reservations = reservaciones.size();
-        new_reservations = 3;
-        model.addAttribute("nuevas_reservaciones",new_reservations);
-        model.addAttribute("total_reservaciones",total_reservations);
-        for(int i=0;i<reservaciones.size();i++){
-            Model resultado = model.addAttribute("reservaciones" + i, reservaciones.get(i));
-        }
-        return "dash";
+        return "dashboard";
     }
 
     @RequestMapping("/workingtimes")
@@ -52,7 +36,7 @@ public class mainController {
 
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("/")
     public String login(){
         return "login";
 

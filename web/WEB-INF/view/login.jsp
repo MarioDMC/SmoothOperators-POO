@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<%@include file="shared/menu.jsp" %>
 <header class="container-fluid container-black">
     <div class="row">
         <div class="col-lg-3">
@@ -52,7 +53,7 @@
     </div>
 </div>
 </div>
-<script src="<c:url value="/resources/js/jquery-3.1.1.min.js" />"></script>
+<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/main.js" />"></script>
 </body>
 </html>

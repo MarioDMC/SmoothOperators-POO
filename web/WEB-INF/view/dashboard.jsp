@@ -30,7 +30,7 @@ include file="shared/navbar.jsp"
             <div class="sidebar-header">
                 <div class="user-pic">
                     <img class="img-responsive img-rounded"
-                         src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                         src="<c:url value="/resources/img/login.png"/>"
                          alt="User picture">
                 </div>
                 <div class="user-info">
@@ -64,16 +64,16 @@ include file="shared/navbar.jsp"
                         <span>Menú</span>
                     </li>
                     <li class="sidebar-dropdown active">
-                        <a href="#dashboard">
+                        <a href="#">
                             <i class="fa fa-tachometer-alt"></i>
                             <span>Dashboard</span>
-                            <span class="badge badge-pill badge-warning">New</span>
+                            <span class="badge badge-pill badge-warning">Nuevo</span>
                         </a>
                         <div class="sidebar-submenu" style="display:block;">
                             <ul>
                                 <li>
                                     <a href="#reservaciones">Reservaciones
-                                        <span class="badge badge-pill badge-success">Pro</span>
+                                        <span class="badge badge-pill badge-success">2</span>
                                     </a>
                                 </li>
                                 <li>
@@ -86,40 +86,16 @@ include file="shared/navbar.jsp"
                                     <a href="#reciente">Reservaciones recientes</a>
                                 </li>
                                 <li>
-                                    <a href="#mesas">Mesas disponibles</a>
-                                </li>
-                                <li>
-                                    <a href="#capacidad">Capacidad de mesas</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#ecomerce">
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>E-commerce</span>
-                            <span class="badge badge-pill badge-danger">3</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Products
-
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">Orders</a>
-                                </li>
-                                <li>
-                                    <a href="#">Credit cart</a>
+                                    <a href="#mesas">Mesas/Listas</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="sidebar-dropdown">
                         <a href="#">
-                            <i class="far fa-gem"></i>
-                            <span>Components</span>
+                            <i class="fa fa-tachometer-alt"></i>
+                            <span>Componentes</span>
+                            <span class="badge badge-pill badge-info">Soon</span>
                         </a>
                         <div class="sidebar-submenu">
                             <ul>
@@ -127,79 +103,16 @@ include file="shared/navbar.jsp"
                                     <a href="#">General</a>
                                 </li>
                                 <li>
-                                    <a href="#">Panels</a>
+                                    <a href="#">Páneles</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tables</a>
+                                    <a href="#">Tablas</a>
                                 </li>
                                 <li>
-                                    <a href="#">Icons</a>
-                                </li>
-                                <li>
-                                    <a href="#">Forms</a>
+                                    <a href="#">Formularios</a>
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="fa fa-chart-line"></i>
-                            <span>Charts</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Pie chart</a>
-                                </li>
-                                <li>
-                                    <a href="#">Line chart</a>
-                                </li>
-                                <li>
-                                    <a href="#">Bar chart</a>
-                                </li>
-                                <li>
-                                    <a href="#">Histogram</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                            <i class="fa fa-globe"></i>
-                            <span>Maps</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                            <ul>
-                                <li>
-                                    <a href="#">Google maps</a>
-                                </li>
-                                <li>
-                                    <a href="#">Open street map</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header-menu">
-                        <span>Extra</span>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-book"></i>
-                            <span>Documentation</span>
-                            <span class="badge badge-pill badge-primary">Beta</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-calendar"></i>
-                            <span>Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-folder"></i>
-                            <span>Examples</span>
-                        </a>
                     </li>
                 </ul>
             </div>
@@ -207,21 +120,7 @@ include file="shared/navbar.jsp"
         </div>
         <!-- sidebar-content  -->
         <div class="sidebar-footer">
-            <a href="#">
-                <i class="fa fa-bell"></i>
-                <span class="badge badge-pill badge-warning notification">3</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-envelope"></i>
-                <span class="badge badge-pill badge-success notification">7</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-cog"></i>
-                <span class="badge-sonar"></span>
-            </a>
-            <a href="#">
-                <i class="fa fa-power-off"></i>
-            </a>
+            <div class="sidebar-brand text-light">K R O N O S</div>
         </div>
     </nav>
     <!-- sidebar-wrapper  -->
@@ -368,35 +267,132 @@ include file="shared/navbar.jsp"
                             <p class="card-text"><b># de mesa:<br></b>17</p>
                             <p class="card-text"><b>Cantidad depositada:<br></b>$300.00 MXN</p>
                             <hr>
-                            <a href="#" class="card-link">Detalles de la reservación</a>
+                            <button type="button" class="btn btn-info mb-2" data-toggle="modal"
+                                    data-target="#exampleModalLong" data-whatever="reserv">
+                                Detalles
+                            </button>
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Detalles</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="card text-center">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" href="#reserv" id="res">Reservación</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#client" id="cli">Cliente</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link disabled" href="#" tabindex="-1"
+                                                               aria-disabled="true">Disabled</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body" id="reserv">
+                                                    <h5 class="card-title">Reservación</h5>
+                                                    <p class="card-text">
+                                                    <div class="jumbotron">
+                                                        <form action="#" method="post">
+                                                            Inicio de reservación
+                                                            <input type="date" name="fecha_inicio" class="custom-select"
+                                                                   value="2019-02-07">
+                                                            <input type="time" name="hora_inicio" class="custom-select"
+                                                                   value="15:00">
+                                                            Fin de reservación
+                                                            <input type="date" name="fecha_fin" class="custom-select"
+                                                                   value="2019-02-07">
+                                                            <input type="time" name="hora_fin" class="custom-select"
+                                                                   value="17:00">
+                                                            <hr>
+                                                            Datos de la reservación:
+                                                            <input type="text" class="form-control" name="ID"
+                                                                   placeholder="ID" value="#C51882">
+                                                            <input type="text" name="status_" placeholder="Status"
+                                                                   class="form-control" value="Confirmado">
+                                                            <input type="number" min="0" step=".5" name="deposito"
+                                                                   placeholder="Depósito" class="form-control"
+                                                                   value="300.00">
+                                                            <input type="text" class="form-control" name="voucher"
+                                                                   placeholder="ID" value="0002525">
+                                                            <hr>
+                                                            Pago:
+                                                            <input type="text" class="custom-select" name="metodo_pago"
+                                                                   value="Efectivo" placeholder="Método de pago">
+                                                            <input type="text" class="custom-select" name="pago"
+                                                                   value="SI" placeholder="Depósito pagado:">
+                                                            <hr>
+                                                            # de mesa/personas:
+                                                            <input type="text" class="custom-select" name="num_personas"
+                                                                   value="4" placeholder="Número de personas:">
+                                                            <input type="text" class="custom-select" name="nombre_mesa"
+                                                                   value="#17, 6 personas"
+                                                                   placeholder="Nombre de la mesa:">
+                                                            <button type="button"
+                                                                    class="btn btn-outline-secondary mt-2">Agregar mesa
+                                                            </button>
+                                                            <button type="button"
+                                                                    class="btn btn-outline-secondary mt-2">Eliminar mesa
+                                                            </button>
+                                                        </form>
+                                                        <hr>
+                                                    </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-body d-none" id="client">
+                                                    <h5 class="card-title">Cliente</h5>
+                                                    <p class="card-text">
+                                                    <div class="jumbotron">
+                                                        <form action="#" method="post">
+                                                            Nombre:
+                                                            <input type="text" name="nombre" placeholder="Nombre"
+                                                                   class="form-control" value="Bruno">
+                                                            Apellidos:
+                                                            <input type="text" name="apellidos" placeholder="Apellidos"
+                                                                   class="form-control" value="Díaz">
+                                                            <hr>
+                                                            Datos personales:
+                                                            <input type="email" name="correo" placeholder="Correo" class="form-control" value="bruno.diaz@gmail.com">
+                                                            <input type="text" name="telefono" placeholder="Teléfono" class="form-control" value="+1-568-569210">
+                                                            <input type="text" name="company" placeholder="Nombre de compañía:" class="form-control" value="Happy Hamburguers">
+                                                            <hr>
+                                                            Dirección:
+                                                            <input type="text" name="direccion" placeholder="Dirección" class="form-control" value="Street 12">
+                                                            <input type="text" name="ciudad" placeholder="Ciudad" class="form-control" value="Benito Juarez">
+                                                            <input type="text" name="estado" placeholder="Estado/Región" class="form-control" value="Quintana Roo">
+                                                            <input type="text" name="cod_postal" placeholder="C.P." class="form-control" value="44547">
+                                                            <input type="text" name="pais" placeholder="País" class="form-control" value="México">
+                                                        </form>
+                                                    </div>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                Cancelar
+                                            </button>
+                                            <button type="button" class="btn btn-primary">Conservar cambios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <br>
-                            <a href="#" class="card-link">Detalles del cliente</a>
                         </div>
                     </div>
                 </div>
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
             </div>
-            <h5>More templates</h5>
-            <hr>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>Angular 2+ Version</h6>
-                    <div style="width:13rem;">
-                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
-                           class="alert-link">
-                            <img class="card-img-top"
-                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
-                                 alt="Card image cap">
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </main>
@@ -404,79 +400,15 @@ include file="shared/navbar.jsp"
     <!-- sidebar-wrapper  -->
     <main class="page-content" id="mesas">
         <div class="container-fluid">
-            <h2>Mesas disponibles</h2>
+            <h2>Mesas/Listas</h2>
             <hr>
             <div class="row">
                 <div class="form-group col-md-12">
-                    <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
-                                                             target="_blank">
-                        Github</a>, it contains more themes and background image option</p>
-                </div>
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
-            </div>
-            <h5>More templates</h5>
-            <hr>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>Angular 2+ Version</h6>
-                    <div style="width:13rem;">
-                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
-                           class="alert-link">
-                            <img class="card-img-top"
-                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
-                                 alt="Card image cap">
-                        </a>
-                    </div>
+                    <a href="<c:url value="/vista"/>" class="btn btn-outline-info my-2 my-sm-0">Tabla de lista del restaurante</a>
+                    <a href="<c:url value="/workingtimes"/>" class="btn btn-outline-info my-2 my-sm-0">Horas de trabajo</a>
                 </div>
             </div>
         </div>
-
-    </main>
-    <!-- page-content" -->
-    <!-- sidebar-wrapper  -->
-    <main class="page-content" id="capacidad">
-        <div class="container-fluid">
-            <h2>Capacidad de las mesas</h2>
-            <hr>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
-                                                             target="_blank">
-                        Github</a>, it contains more themes and background image option</p>
-                </div>
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
-            </div>
-            <h5>More templates</h5>
-            <hr>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>Angular 2+ Version</h6>
-                    <div style="width:13rem;">
-                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
-                           class="alert-link">
-                            <img class="card-img-top"
-                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
-                                 alt="Card image cap">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </main>
     <!-- page-content" -->
 </div>
@@ -485,6 +417,7 @@ include file="shared/navbar.jsp"
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/js/javascript.js"/>"></script>
 </body>
 </html>

@@ -47,19 +47,15 @@ jQuery(function ($) {
 $('.nav-item a').click(function () {
     $('.nav-item a').removeClass('active');
     $(this).addClass('active');
-    if ($('#res').hasClass('active')){
-        $('#client').style.display = none;
-        $('#reserv').style.display = block;
-        $('#res').removeClass('active');
-        $('#res').removeClass('inactive');
-        $('#cli').removeClass('inactive');
-        $('#cli').removeClass('active');
+    if($('#reserv').hasClass('d-none')){
+        $('#reserv').removeClass('d-none');
+        //$('#reserv').removeClass('active');
+        $('#client').addClass('d-none');
+        //$('#client').addClass('active');
     }else{
-        $('#cli').removeClass('inactive');
-        $('#cli').addClass('active');
-        $('#res').removeClass('active');
-        $('#res').addClass('inactive');
-        $('#client').style.display = block;
-        $('#reserv').style.display = none;
+        $('#reserv').addClass('d-none');
+        //$('#reserv').addClass('active');
+        $('#client').removeClass('d-none');
+        //$('#client').removeClass('active');
     }
 });
