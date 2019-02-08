@@ -48,4 +48,10 @@ public class mainController {
         return "login";
 
     }
+    @RequestMapping("/tablesmap")
+    public String tablesMap(){
+        return "tablesmap";
+
+    }
+
 }

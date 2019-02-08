@@ -11,7 +11,6 @@
     <title>Horario Restaurante</title>
 </head>
     <body>
-    <%@include file="shared/menu.jsp" %>
     <header class="container-fluid container-black">
         <div class="row">
             <div class="col-lg-3">
