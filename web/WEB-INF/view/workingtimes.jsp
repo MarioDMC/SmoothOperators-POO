@@ -11,7 +11,6 @@
     <title>Horario Restaurante</title>
 </head>
     <body>
-    <%@include file="shared/menu.jsp" %>
     <%@include file="shared/navbar.jsp" %>
         <h2 align="center">Días y horario en que labora el restaurante</h2>
         <div class="container">

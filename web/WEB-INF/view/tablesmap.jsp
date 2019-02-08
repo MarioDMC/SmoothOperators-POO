@@ -3,6 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/form.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/tables_map.css"/>" rel="stylesheet">
 </head>
 <body>
@@ -299,5 +300,7 @@
         </li>
     </ol>
 </div>
+    <div class="button" align="center">
+    <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
 </div>
 </body>
