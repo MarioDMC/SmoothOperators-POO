@@ -30,7 +30,7 @@
                 </tr>
             <tr align="center">
                 <td>Lunes</td>
-                <td><%--@declare id="open"--%><label for="open"><input type="time" min="00:00" max="23:00" ></label></td>
+                <td><%--@declare id="open"--%><label for="open"><input type="time" step="600" min="00:00" max="23:00" ></label></td>
                 <td><%--@declare id="close"--%><label for="close"><input type="time" min="00:00" max="23:00"></label></td>
                 <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name="cerrado"></label></td>
             </tr>
