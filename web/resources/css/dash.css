@@ -91,6 +91,9 @@ input, button, select, optgroup, textarea{
 .table{
     font-size: 14px;
 }
+.badge-pill{
+    border-radius: 0.150rem;
+}
 /**/
 @keyframes swing {
     0% {
@@ -337,7 +340,6 @@ body {
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f105";
     font-style: normal;
     display: inline-block;
     font-style: normal;

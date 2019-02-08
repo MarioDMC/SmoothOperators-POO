@@ -64,7 +64,7 @@ include file="shared/navbar.jsp"
                         <span>Menú</span>
                     </li>
                     <li class="sidebar-dropdown active">
-                        <a href="#">
+                        <a href="#dashboard">
                             <i class="fa fa-tachometer-alt"></i>
                             <span>Dashboard</span>
                             <span class="badge badge-pill badge-warning">New</span>
@@ -95,7 +95,7 @@ include file="shared/navbar.jsp"
                         </div>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="#">
+                        <a href="#ecomerce">
                             <i class="fa fa-shopping-cart"></i>
                             <span>E-commerce</span>
                             <span class="badge badge-pill badge-danger">3</span>

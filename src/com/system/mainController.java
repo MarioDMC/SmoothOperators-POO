@@ -38,7 +38,7 @@ public class mainController {
         for(int i=0;i<reservaciones.size();i++){
             Model resultado = model.addAttribute("reservaciones" + i, reservaciones.get(i));
         }
-        return "dashboard";
+        return "dash";
     }
 
     @RequestMapping("/workingtimes")

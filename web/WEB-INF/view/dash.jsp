@@ -30,7 +30,7 @@ include file="shared/navbar.jsp"
             <div class="sidebar-header">
                 <div class="user-pic">
                     <img class="img-responsive img-rounded"
-                         src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                         src="<c:url value="/resources/img/login.png"/>"
                          alt="User picture">
                 </div>
                 <div class="user-info">
@@ -368,35 +368,60 @@ include file="shared/navbar.jsp"
                             <p class="card-text"><b># de mesa:<br></b>17</p>
                             <p class="card-text"><b>Cantidad depositada:<br></b>$300.00 MXN</p>
                             <hr>
-                            <a href="#" class="card-link">Detalles de la reservación</a>
+                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalLong" data-whatever="reserv">
+                                Detalles
+                            </button>
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Detalles</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div class="card text-center">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs">
+                                                        <li class="nav-item">
+                                                                <a class="nav-link active" href="#reserv" id="res">Reservación</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#client" id="cli">Cliente</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body" id="reserv" style="display: block;">
+                                                    <h5 class="card-title">Special title treatment reserv</h5>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                                <div class="card-body" id="client" style="display: none;">
+                                                    <h5 class="card-title">Special title treatment client</h5>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <br>
-                            <a href="#" class="card-link">Detalles del cliente</a>
                         </div>
                     </div>
                 </div>
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
             </div>
-            <h5>More templates</h5>
-            <hr>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>Angular 2+ Version</h6>
-                    <div style="width:13rem;">
-                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
-                           class="alert-link">
-                            <img class="card-img-top"
-                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
-                                 alt="Card image cap">
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </main>
@@ -409,33 +434,11 @@ include file="shared/navbar.jsp"
             <div class="row">
                 <div class="form-group col-md-12">
                     <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
-                                                             target="_blank">
-                        Github</a>, it contains more themes and background image option</p>
+                    <p> You can find the complete code on
                 </div>
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
-            </div>
-            <h5>More templates</h5>
-            <hr>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>Angular 2+ Version</h6>
-                    <div style="width:13rem;">
-                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
-                           class="alert-link">
-                            <img class="card-img-top"
-                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
-                                 alt="Card image cap">
-                        </a>
-                    </div>
-                </div>
             </div>
+
         </div>
 
     </main>
@@ -448,33 +451,11 @@ include file="shared/navbar.jsp"
             <div class="row">
                 <div class="form-group col-md-12">
                     <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-                    <p> You can find the complete code on <a href="https://github.com/azouaoui-med/pro-sidebar-template"
-                                                             target="_blank">
-                        Github</a>, it contains more themes and background image option</p>
+                    <p> You can find the complete code on
                 </div>
-                <div class="form-group col-md-12">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=large"
-                            frameborder="0" scrolling="0" width="140px" height="30px"></iframe>
-                </div>
-            </div>
-            <h5>More templates</h5>
-            <hr>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h6>Angular 2+ Version</h6>
-                    <div style="width:13rem;">
-                        <a href="https://github.com/azouaoui-med/angular-pro-sidebar" target="_blank"
-                           class="alert-link">
-                            <img class="card-img-top"
-                                 src="https://user-images.githubusercontent.com/25878302/50010090-d193f480-ffb8-11e8-98ef-3d7ffa6ddfe1.png"
-                                 alt="Card image cap">
-                        </a>
-                    </div>
-                </div>
             </div>
+
         </div>
 
     </main>
@@ -485,6 +466,7 @@ include file="shared/navbar.jsp"
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/js/javascript.js"/>"></script>
 </body>
 </html>
