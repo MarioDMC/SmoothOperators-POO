@@ -248,7 +248,7 @@
     <td>
         <div class="m-t-xs text-right">
             <a href="" class="btn btn-primary btn-outline btn-sm m-l-xs pj-table-icon-edit">
-                <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
+                <img src="<c:url value="/resources/img/fa%20fa-pencil.png"/>" class="fa fa-pencil" alt="fa fa-pencil.png">
             </a>
     <td>
         <a href="" class="btn btn-danger btn-outline btn-sm m-l-xs pj-table-icon-delete">
