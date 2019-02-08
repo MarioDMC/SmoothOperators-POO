@@ -2,12 +2,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="es-MX">
 <head>
+    <title>Tabla de Lista</title>
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
-    <title>Tabla de Lista</title>
 </head>
 <%@include file="shared/sidebar.jsp" %>
 <body>
