@@ -1,6 +1,6 @@
 <link href="<c:url value="/resources/css/menu.css" />" rel="stylesheet">
 
-<script src="<c:url value="/resources/js/jquery-3.1.1.min.js" />"></script>
+<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/javascript.js" />"></script>
 
 <div id="menu-toggle">
@@ -9,7 +9,7 @@
 
 <nav id="menu">
 
-    <a href="form">Reservar</a>
-    <a href="login">Login</a>
+    <a href="<c:url value="/form"/>">Reservar</a>
+    <a href="<c:url value="/"/>">Login</a>
 
 </nav>

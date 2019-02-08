@@ -13,6 +13,7 @@ input, button, select, optgroup, textarea{
 #logo-smooth{
     width: 300px;
     margin: 24px 20px;
+    background-size: cover;
 }
 header .nav{
     justify-content: flex-end;
@@ -126,6 +127,58 @@ header .nav-item:hover{
     background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 1);
 }
+.btn-sm, .btn-group-sm > .btn{
+    border-radius: 3rem;
+}
+.btn-primary {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+.btn-primary:hover {
+    background-color: #00ADB5;
+    color: #fff;
+    border-color: #00ADB5;
+}
+.color-white{
+    color: #fff;
+}
+.bg-amarillo{
+    background-color: #f6c523;
+    color: #fff;
+}
+.bg-wine{
+    background-color: #900c3f;
+    color: #f7f7f7;
+}
+.bg-winer{
+    background-color: #720c3b;
+    color: #f7f7f7;
+}
+.bg-piel{
+    background-color: #ffc300;
+    color: #1b1e21;
+}
+.bg-green{
+    background-color: #228c7b;
+    color: #fff;
+}
+.bg-orange{
+    background-color: #c70039;
+    color: #fff;
+}
+.bg-vclaro{
+    background-color: #ff5733;
+    color: #fff;
+}
+.btn-link:hover{
+    color: #00ADB5;
+}
+.card-header:first-child{
+    border-radius: 0rem;
+}
+/*
 .justify-content-between {
     margin-right: 750px;
 }
+*/

@@ -8,14 +8,14 @@
     <title>Users</title>
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-    <link href="<c:url value="/resources/css/form.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
 
 </head>
-<%@include file="shared/navbar.jsp" %>
+<%@include file="shared/sidebar.jsp" %>
 <body>
 <h2 align="center"> Usuarios </h2>
-<div class="container" >
+<div class="page-content">
     <a href="" class="btn btn-success btn-outline btn-sm m-l-xs pj-table-icon-delete">
         <img src="<c:url value="/resources/img/plus.png"/>" class="icon" alt="icon.png"> Añadir Usuario
     </a>
@@ -90,4 +90,8 @@
 </tr>
 </div>
 </body>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
 </html>
