@@ -63,6 +63,7 @@
                     <img src="<c:url value="/resources/img/fa%20fa-trash.png"/>" class="fa fa-trash" alt="fa fa-trash.png">
                 </a>
 </div>
+
             </td>
 
         <tr>
