@@ -4,18 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/form.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
     <title>Tabla de Lista</title>
 </head>
+<%@include file="shared/sidebar.jsp" %>
 <body>
-<%@include file="shared/menu.jsp" %>
-<%@include file="shared/navbar.jsp" %>
 <h2 align="center"> Tabla de lista del restaurante </h2>
 <div class="container">
-</div>
-
     <table  align="center">
         <tr>
             <td>
@@ -323,6 +320,9 @@
     <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
 </div>
 </div>
-
 </body>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
+<script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
 </html>
