@@ -451,7 +451,7 @@ include file="shared/navbar.jsp"
             <div class="row">
                 <div class="form-group col-md-12">
                     <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-                    <p> You can find the complete code on
+                    <p> You can find the complete code on xd
                 </div>
 
             </div>
