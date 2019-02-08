@@ -41,4 +41,9 @@ public class mainController {
         return "login";
 
     }
+
+    @RequestMapping("/reportes")
+    public String reportes(HttpServletRequest request, Model model){
+        return "reportes";
+    }
 }

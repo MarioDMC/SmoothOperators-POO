@@ -406,6 +406,7 @@ include file="shared/navbar.jsp"
                 <div class="form-group col-md-12">
                     <a href="<c:url value="/vista"/>" class="btn btn-outline-info my-2 my-sm-0">Tabla de lista del restaurante</a>
                     <a href="<c:url value="/workingtimes"/>" class="btn btn-outline-info my-2 my-sm-0">Horas de trabajo</a>
+                    <a href="<c:url value="/reportes"/>" class="btn btn-outline-dark my-2 my-sm-0">LOGS</a>
                 </div>
             </div>
         </div>

@@ -363,16 +363,25 @@ include file="shared/navbar.jsp"
                                                                    class="form-control" value="Díaz">
                                                             <hr>
                                                             Datos personales:
-                                                            <input type="email" name="correo" placeholder="Correo" class="form-control" value="bruno.diaz@gmail.com">
-                                                            <input type="text" name="telefono" placeholder="Teléfono" class="form-control" value="+1-568-569210">
-                                                            <input type="text" name="company" placeholder="Nombre de compañía:" class="form-control" value="Happy Hamburguers">
+                                                            <input type="email" name="correo" placeholder="Correo"
+                                                                   class="form-control" value="bruno.diaz@gmail.com">
+                                                            <input type="text" name="telefono" placeholder="Teléfono"
+                                                                   class="form-control" value="+1-568-569210">
+                                                            <input type="text" name="company"
+                                                                   placeholder="Nombre de compañía:"
+                                                                   class="form-control" value="Happy Hamburguers">
                                                             <hr>
                                                             Dirección:
-                                                            <input type="text" name="direccion" placeholder="Dirección" class="form-control" value="Street 12">
-                                                            <input type="text" name="ciudad" placeholder="Ciudad" class="form-control" value="Benito Juarez">
-                                                            <input type="text" name="estado" placeholder="Estado/Región" class="form-control" value="Quintana Roo">
-                                                            <input type="text" name="cod_postal" placeholder="C.P." class="form-control" value="44547">
-                                                            <input type="text" name="pais" placeholder="País" class="form-control" value="México">
+                                                            <input type="text" name="direccion" placeholder="Dirección"
+                                                                   class="form-control" value="Street 12">
+                                                            <input type="text" name="ciudad" placeholder="Ciudad"
+                                                                   class="form-control" value="Benito Juarez">
+                                                            <input type="text" name="estado" placeholder="Estado/Región"
+                                                                   class="form-control" value="Quintana Roo">
+                                                            <input type="text" name="cod_postal" placeholder="C.P."
+                                                                   class="form-control" value="44547">
+                                                            <input type="text" name="pais" placeholder="País"
+                                                                   class="form-control" value="México">
                                                         </form>
                                                     </div>
                                                     </p>
@@ -406,14 +415,14 @@ include file="shared/navbar.jsp"
             <hr>
             <div class="row">
                 <div class="form-group col-md-12">
-                    <a href="<c:url value="vista"/>" class="btn btn-outline-info my-2 my-sm-0">Tabla de lista del restaurante</a>
+                    <a href="<c:url value="vista"/>" class="btn btn-outline-info my-2 my-sm-0">Tabla de lista del
+                        restaurante</a>
                 </div>
             </div>
         </div>
     </main>
     <!-- page-content" -->
 </div>
-
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
