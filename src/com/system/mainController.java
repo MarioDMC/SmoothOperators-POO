@@ -15,9 +15,9 @@ public class mainController {
         return "form";
     }
 
-    @RequestMapping("/vista")
+    @RequestMapping("/tables")
     public String vista(HttpServletRequest request, Model model){
-        return "vista";
+        return "tables";
     }
 
     @RequestMapping("/dashboard")
@@ -48,10 +48,15 @@ public class mainController {
         return "login";
 
     }
+
+    @RequestMapping("/users")
+    public String users(){
+        return "users";
+
+    }
     @RequestMapping("/tablesmap")
     public String tablesMap(){
         return "tablesmap";
 
     }
-
 }

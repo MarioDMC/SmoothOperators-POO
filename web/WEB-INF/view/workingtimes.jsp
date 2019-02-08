@@ -11,13 +11,8 @@
     <title>Horario Restaurante</title>
 </head>
     <body>
-    <header class="container-fluid container-black">
-        <div class="row">
-            <div class="col-lg-3">
-                <img src="<c:url value="/resources/img/logo.png" />" alt="logo.png" id="logo-smooth" class="img-responsive">
-            </div>
-        </div>
-    </header>
+    <%@include file="shared/menu.jsp" %>
+    <%@include file="shared/navbar.jsp" %>
         <h2 align="center">Días y horario en que labora el restaurante</h2>
         <div class="container">
             <table align="center">
@@ -71,9 +66,9 @@
             </tr>
 
     </table>
+            <div class="button" align="center">
+                <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
+            </div>
         </div>
-    <div class="col-lg-8 offset-sm-2 button">
-        <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
-    </div>
     </body>
 </html>
