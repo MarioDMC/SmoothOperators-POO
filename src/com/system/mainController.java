@@ -47,4 +47,9 @@ public class mainController {
         return "users";
 
     }
+    @RequestMapping("/tablesmap")
+    public String tablesMap(){
+        return "tablesmap";
+
+    }
 }

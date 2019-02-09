@@ -1,17 +1,18 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html  lang="es-MX">
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
     <link href="<c:url value="/resources/bootstrap/css/bootstrap.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">>
-    <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
-    <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/form.css"/>" rel="stylesheet">
+    <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
     <title>Horario Restaurante</title>
 </head>
-<%@include file="shared/sidebar.jsp" %>
     <body>
+    <%@include file="shared/menu.jsp" %>
+    <%@include file="shared/navbar.jsp" %>
         <h2 align="center">Días y horario en que labora el restaurante</h2>
         <div class="container">
             <table align="center">
@@ -70,8 +71,4 @@
             </div>
         </div>
     </body>
-<script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
-<script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
-<script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
-<script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
 </html>

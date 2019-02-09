@@ -15,7 +15,7 @@
 <%@include file="shared/sidebar.jsp" %>
 <body>
 <h2 align="center"> Usuarios </h2>
-<div class="container" >
+<div class="page-content" >
     <button class="open-button btn btn-success btn-outline btn-sm m-l-xs" onclick="openForm()">
         <img src="<c:url value="/resources/img/plus.png"/>" class="icon" alt="icon.png"> Añadir Usuario
     </button>
