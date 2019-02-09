@@ -168,7 +168,7 @@
 </table>
 
 <div class="button" align="center">
-    <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
+    <button type="submit" class="btn btn-danger btn-sm"> Guardar  </button>
 </div>
 </div>
 </div>
