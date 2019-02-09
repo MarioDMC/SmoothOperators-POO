@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/js/javascript.js"/>"></script>
 <div class="page-wrapper chiller-theme toggled">
@@ -73,6 +73,9 @@
                                 </li>
                                 <li>
                                     <a href="#mesas">Mesas/Listas</a>
+                                </li>
+                                <li>
+                                    <a href="#users">Usuarios</a>
                                 </li>
                             </ul>
                         </div>
