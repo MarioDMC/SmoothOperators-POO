@@ -14,14 +14,16 @@
 </head>
 <%@include file="shared/sidebar.jsp" %>
 <body>
+<button class="open-button btn btn-success btn-outline btn-sm m-l-xs" onclick="openForm()">
+    <img src="<c:url value="/resources/img/plus.png"/>" class="icon" alt="icon.png"> Añadir Usuario
+</button>
 <h2 align="center"> Usuarios </h2>
-<div class="page-content" >
+<main class="page-content" >
     <div class="container-fluid">
-    <button class="open-button btn btn-success btn-outline btn-sm m-l-xs" onclick="openForm()">
-        <img src="<c:url value="/resources/img/plus.png"/>" class="icon" alt="icon.png"> Añadir Usuario
-    </button>
-    <table  align="center">
+        <div class="jumbotron-fluid">
+    <table  class="table">
         <tr>
+
             <td>
             <th>Nombre</th>
 
@@ -89,7 +91,7 @@
 </div>
 </td>
 </tr>
-</div>
+</main>
 
 <div class="form-popup" id="myForm">
     <form action="" class="form-container">
@@ -110,6 +112,7 @@
         <button type="submit" class="btn">Añadir</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
     </form>
+</div>
 </div>
 </body>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>

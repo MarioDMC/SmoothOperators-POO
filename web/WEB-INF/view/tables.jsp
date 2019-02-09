@@ -14,7 +14,7 @@
 <%@include file="shared/sidebar.jsp" %>
 <body>
 <h2 align="center"> Tabla de lista del restaurante </h2>
-<div class="page-content">
+<main class="page-content">
     <div class="container-fluid">
 <table  align="center">
     <tr>
@@ -171,7 +171,7 @@
     <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
 </div>
 </div>
-</div>
+</main>
 </body>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
