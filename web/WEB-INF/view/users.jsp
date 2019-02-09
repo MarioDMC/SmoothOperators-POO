@@ -10,15 +10,15 @@
     <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
-
+    <link href="<c:url value="/resources/css/users.css"/>" rel="stylesheet">
 </head>
 <%@include file="shared/sidebar.jsp" %>
 <body>
 <h2 align="center"> Usuarios </h2>
-<div class="page-content">
-    <a href="" class="btn btn-success btn-outline btn-sm m-l-xs pj-table-icon-delete">
+<div class="page-content" >
+    <button class="open-button btn btn-success btn-outline btn-sm m-l-xs" onclick="openForm()">
         <img src="<c:url value="/resources/img/plus.png"/>" class="icon" alt="icon.png"> Añadir Usuario
-    </a>
+    </button>
     <table  align="center">
         <tr>
             <td>
@@ -89,9 +89,31 @@
 </td>
 </tr>
 </div>
+
+<div class="form-popup" id="myForm">
+    <form action="" class="form-container">
+
+
+        <label><b>Nombre</b></label>
+        <input type="text" placeholder="Ingrese Nombre" name="name" required>
+
+        <label><b>Email</b></label>
+        <input type="email" placeholder="Ingrese Email" name="email" required>
+
+        <label><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+
+        <label><b>Telefono</b></label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ingrese Telefono" name="tel" required>
+
+        <button type="submit" class="btn">Añadir</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+    </form>
+</div>
 </body>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.bundle.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/js/main.js"/>"></script>
 </html>
