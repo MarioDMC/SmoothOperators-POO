@@ -15,6 +15,7 @@
 <body>
 <h2 align="center"> Tabla de lista del restaurante </h2>
 <div class="page-content">
+    <div class="container-fluid">
 <table  align="center">
     <tr>
         <td>
@@ -168,6 +169,7 @@
 
 <div class="button" align="center">
     <button type="submit" class="btn btn-danger btn-sm"> Guardar </button>
+</div>
 </div>
 </div>
 </body>
