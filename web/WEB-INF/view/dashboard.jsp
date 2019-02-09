@@ -422,3 +422,4 @@ include file="shared/navbar.jsp"
 <script src="<c:url value="/resources/js/javascript.js"/>"></script>
 </body>
 </html>
+
