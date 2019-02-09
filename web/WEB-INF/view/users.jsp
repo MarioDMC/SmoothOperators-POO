@@ -16,6 +16,7 @@
 <body>
 <h2 align="center"> Usuarios </h2>
 <div class="page-content" >
+    <div class="container-fluid">
     <button class="open-button btn btn-success btn-outline btn-sm m-l-xs" onclick="openForm()">
         <img src="<c:url value="/resources/img/plus.png"/>" class="icon" alt="icon.png"> Añadir Usuario
     </button>

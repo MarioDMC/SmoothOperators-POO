@@ -140,7 +140,7 @@
     <!-- page-content" -->
     <!-- sidebar-wrapper  -->
     <main class="page-content" id="reciente">
-        <div class="container-fluid">
+        <div class="container">
             <h2>Reservaciones recientes</h2>
             <p class="small">Tienes <b>3</b> reservaciones para hoy.</p>
             <hr>

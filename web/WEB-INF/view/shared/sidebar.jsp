@@ -74,6 +74,9 @@
                                 <li>
                                     <a href="#mesas">Mesas/Listas</a>
                                 </li>
+                                <li>
+                                    <a href="#users">Usuarios</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
