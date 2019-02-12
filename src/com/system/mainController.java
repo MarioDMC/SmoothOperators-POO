@@ -20,14 +20,14 @@ public class mainController {
         return "tables";
     }
 
-    @RequestMapping("/users")
+    @RequestMapping("/menu/users")
     public String users(){
         return "users";
     }
 
-    @RequestMapping("/dashboard")
+    @RequestMapping("/menu/dashboard")
     public String dashboard(HttpServletRequest request, Model model){
-        return "dashboard";
+        return "dash";
     }
 
     @RequestMapping("/workingtimes")
