@@ -130,3 +130,6 @@ header .nav-item:hover{
         text-align: center;
     }
 }
+.font-small{
+    font-size: 10px;
+}

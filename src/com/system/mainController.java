@@ -15,7 +15,7 @@ public class mainController {
         return "form";
     }
 
-    @RequestMapping("/tables")
+    @RequestMapping("/menu/tables")
     public String vista(HttpServletRequest request, Model model){
         return "tables";
     }
@@ -27,13 +27,17 @@ public class mainController {
 
     @RequestMapping("/menu/dashboard")
     public String dashboard(HttpServletRequest request, Model model){
-        return "dash";
+        return "dashboard";
     }
 
-    @RequestMapping("/workingtimes")
+    @RequestMapping("/menu/tabla_reservaciones")
+    public String tabla_reservaciones(){
+        return "tabla_reservaciones";
+    }
+
+    @RequestMapping("/menu/workingtimes")
     public String workingTimes(){
         return "workingtimes";
-
     }
 
     @RequestMapping("/")
@@ -41,8 +45,14 @@ public class mainController {
         return "login";
     }
 
-    @RequestMapping("/reportes")
+    @RequestMapping("/menu/reportes")
     public String reportes(HttpServletRequest request, Model model){
         return "reportes";
+    }
+
+    @RequestMapping("/tablesmap")
+    public String tablesMap(){
+        return "tablesmap";
+
     }
 }

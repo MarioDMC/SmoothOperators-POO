@@ -107,6 +107,7 @@ include file="shared/navbar.jsp"
                         <td>Editar/Eliminar</td>
                     </tr>
                 </table>
+                <a href="<c:url value="/menu/tabla_reservaciones"/>" class="btn btn-outline-info my-2 my-sm-0">Más detalles</a>
             </div>
         </div>
 
@@ -300,9 +301,9 @@ include file="shared/navbar.jsp"
             <hr>
             <div class="row">
                 <div class="form-group col-md-12">
-                    <a href="<c:url value="/tables"/>" class="btn btn-outline-info my-2 my-sm-0">Tabla de lista del restaurante</a>
-                    <a href="<c:url value="/workingtimes"/>" class="btn btn-outline-info my-2 my-sm-0">Horas de trabajo</a>
-                    <a href="<c:url value="/reportes"/>" class="btn btn-outline-dark my-2 my-sm-0">LOGS</a>
+                    <a href="<c:url value="/menu/tables"/>" class="btn btn-outline-info my-2 my-sm-0">Tabla de lista del restaurante</a>
+                    <a href="<c:url value="/menu/workingtimes"/>" class="btn btn-outline-info my-2 my-sm-0">Horas de trabajo</a>
+                    <a href="<c:url value="/menu/reportes"/>" class="btn btn-outline-dark my-2 my-sm-0">LOGS</a>
                 </div>
             </div>
         </div>
