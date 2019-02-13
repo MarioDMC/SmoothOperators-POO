@@ -24,7 +24,7 @@
 
         <div class="formulario">
             <h2>Iniciar Sesión</h2>
-            <form action="dashboard" class="mt-5">
+            <form action="<c:url value="/menu"/>" class="mt-5">
                 <input type="text" placeholder="Usuario" required>
                 <input type="password" placeholder="Contraseña" required>
                 <button type="submit" class="btn btn-danger btn-sm">INICIAR SESIÓN</button>

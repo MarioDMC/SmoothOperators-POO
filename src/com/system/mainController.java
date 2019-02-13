@@ -40,6 +40,11 @@ public class mainController {
         return "workingtimes";
     }
 
+    @RequestMapping("/menu")
+    public String menu(){
+        return "menu";
+    }
+
     @RequestMapping("/")
     public String login(){
         return "login";

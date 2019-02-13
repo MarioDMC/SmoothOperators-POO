@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+body{
+    background-color: #fff;
+}
+.contenedor-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 21%;
+}
+.menu-image{
+    position: absolute;
+    width: 50%;
+}
+.texto-img{
+    position: absolute;
+    font-size: 3.8rem;
+    font-family: 'Hanalei Fill', cursive;
+}
