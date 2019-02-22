@@ -47,15 +47,43 @@ jQuery(function ($) {
 $('.nav-item a').click(function () {
     $('.nav-item a').removeClass('active');
     $(this).addClass('active');
-    if($('#reserv').hasClass('d-none')){
+    if ($('#reserv').hasClass('d-none')) {
         $('#reserv').removeClass('d-none');
         //$('#reserv').removeClass('active');
         $('#client').addClass('d-none');
         //$('#client').addClass('active');
-    }else{
+    } else {
         $('#reserv').addClass('d-none');
         //$('#reserv').addClass('active');
         $('#client').removeClass('d-none');
         //$('#client').removeClass('active');
     }
 });
+
+//UBICACIÓN
+function iniciar() {
+    var boton = document.getElementById('obtener');
+    boton.addEventListener('click', obtener, false);
+}
+
+
+function obtener() {
+    navigator.geolocation.getCurrentPosition(mostrar, gestionarErrores);
+}
+
+
+function mostrar(posicion) {
+    var ubicacion = document.getElementById('localizacion');
+    var datos = '';
+    datos += 'Latitud: ' + posicion.coords.latitude + ' ';
+    datos += 'Longitud: ' + posicion.coords.longitude + ' ';
+    datos += 'Exactitud: ' + posicion.coords.accuracy + ' metros.';
+    ubicacion.innerHTML = datos;
+    $('#localizacion').val(datos);
+}
+
+function gestionarErrores(error) {
+    alert('Error: ' + error.code + ' ' + error.message + '\n\nPor favor compruebe que está conectado ' + 'a internet y habilite la opción permitir compartir ubicación física');
+}
+
+window.addEventListener('load', iniciar, false);

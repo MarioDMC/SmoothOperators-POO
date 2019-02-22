@@ -9,12 +9,12 @@ import java.util.List;
 
 @Controller
 public class mainController {
-
+    /*
     @RequestMapping("/form")
     public String form(HttpServletRequest request, Model model){
         return "form";
     }
-
+    */
     @RequestMapping("/menu/tables")
     public String vista(HttpServletRequest request, Model model){
         return "tables";
@@ -58,6 +58,5 @@ public class mainController {
     @RequestMapping("/tablesmap")
     public String tablesMap(){
         return "tablesmap";
-
     }
 }

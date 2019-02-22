@@ -39,5 +39,5 @@
         <error-code>500</error-code>
         <location>/WEB-INF/view/500.jsp</location>
     </error-page>
-
+    <absolute-ordering/>
 </web-app>
