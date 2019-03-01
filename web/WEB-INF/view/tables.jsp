@@ -10,7 +10,7 @@
     <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
 </head>
-
+<!-- v -->
 <%@include file="shared/sidebar.jsp" %>
 <body>
 <h2 align="center"> Tabla de lista del restaurante </h2>
