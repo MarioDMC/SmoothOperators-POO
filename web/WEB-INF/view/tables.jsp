@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html lang="es-MX">
 <head>
@@ -10,7 +11,6 @@
     <link href="<c:url value="/resources/css/times.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/dash.css"/>" rel="stylesheet">
 </head>
-<!-- v -->
 <%@include file="shared/sidebar.jsp" %>
 <body>
 <h2 align="center"> Tabla de lista del restaurante </h2>
@@ -28,18 +28,24 @@
         <th></th>
     </tr>
     <tr>
-        <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
+        <form:form action="datosTables" modelAttribute="tables" method="POST">
+        <td><%--@declare id="check"--%>
+
+            <label for="check"><form:checkbox path="activacion"></form:checkbox></label>
+        </td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="1" style="">
+                <form:input path="nombre" cssClass="form-control pj-selector-editable"></form:input>
+
             </label></td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="1" style="">
+                <form:input path="capacidad" cssClass="form-control pj-selector-editable capacidad" ></form:input>
+
             </label></td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="1" style="">
+                <form:input path="minimo" cssClass="form-control pj-selector-editable minimo"></form:input>
             </label></td>
 
         <td>
@@ -55,18 +61,21 @@
         </td>
 
     <tr>
-        <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
+        <td><%--@declare id="check"--%>
+
+            <label for="check"><form:checkbox path="activacion"></form:checkbox></label>
+        </td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
+                <form:input path="nombre" cssClass="form-control pj-selector-editable"></form:input>
             </label></td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
+                <form:input path="capacidad" cssClass="form-control pj-selector-editable capacidad"></form:input>
             </label></td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">2</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="2" style="">
+                <form:input path="minimo" cssClass="form-control pj-selector-editable minimo"></form:input>
             </label></td>
 
         <td>
@@ -83,18 +92,22 @@
     </tr>
 
     <tr>
-        <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
+        <td><%--@declare id="check"--%>
+
+            <label for="check"><form:checkbox path="activacion"></form:checkbox></label>
+        </td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">3</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="3" style="">
+
+                <form:input path="nombre" cssClass="form-control pj-selector-editable"></form:input>
             </label></td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">3</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="3" style="">
+                <form:input path="capacidad" cssClass="form-control pj-selector-editable capacidad"></form:input>
             </label></td>
         <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">3</span>
             <label>
-                <input type="text" data-name="name" class="form-control pj-selector-editable" value="3" style="">
+                <form:input path="minimo" cssClass="form-control pj-selector-editable minimo"></form:input>
             </label></td>
 
         <td>
@@ -111,18 +124,21 @@
 </tr>
 
 <tr>
-    <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
+    <td><%--@declare id="check"--%>
+
+        <label for="check"><form:checkbox path="activacion"></form:checkbox></label>
+    </td>
     <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">4</span>
         <label>
-            <input type="text" data-name="name" class="form-control pj-selector-editable" value="4" style="">
+            <form:input path="nombre" cssClass="form-control pj-selector-editable"></form:input>
         </label></td>
     <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">4</span>
         <label>
-            <input type="text" data-name="name" class="form-control pj-selector-editable" value="4" style="">
+            <form:input path="capacidad" cssClass="form-control pj-selector-editable capacidad"></form:input>
         </label></td>
     <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">4</span>
         <label>
-            <input type="text" data-name="name" class="form-control pj-selector-editable" value="4" style="">
+            <form:input path="minimo" cssClass="form-control pj-selector-editable minimo"></form:input>
         </label></td>
 
     <td>
@@ -139,18 +155,21 @@
 </tr>
 
 <tr>
-    <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
+    <td><%--@declare id="check"--%>
+
+        <label for="check"><form:checkbox path="activacion"></form:checkbox></label>
+    </td>
     <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">5</span>
         <label>
-            <input type="text" data-name="name" class="form-control pj-selector-editable" value="5" style="">
+            <form:input path="nombre" cssClass="form-control pj-selector-editable"></form:input>
         </label></td>
     <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">5</span>
         <label>
-            <input type="text" data-name="name" class="form-control pj-selector-editable" value="5" style="">
+            <form:input path="capacidad" cssClass="form-control pj-selector-editable capacidad"></form:input>
         </label></td>
     <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">5</span>
         <label>
-            <input type="text" data-name="name" class="form-control pj-selector-editable" value="5" style="">
+            <form:input path="minimo" cssClass="form-control pj-selector-editable minimo"></form:input>
         </label></td>
 
     <td>
@@ -170,6 +189,7 @@
 <div class="button" align="center">
     <button type="submit" class="btn btn-danger btn-sm"> Guardar  </button>
 </div>
+        </form:form>
 </div>
 </div>
 </body>
@@ -177,4 +197,18 @@
 <script src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/popper.min.js"/>"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/js/jquery.min.js"/>"></script>
+<script src="<c:url value="/resources/js/javascript.js"/>"></script>
+<script>
+    $(".capacidad").attr({
+        "type":"number",
+        "min":"1",
+        "data-name":"name"
+    });
+    $(".minimo").attr({
+        "type":"number",
+        "min":"1",
+        "data-name":"name"
+    });
+</script>
 </html>
