@@ -26,18 +26,21 @@
                 </span>
             </div>
             <form:input path="date" cssClass="form-control mr-1" id="dateInput"/>
+            <form:errors path="date" cssClass="form-control is-invalid"/>
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon2">
                     <img src="<c:url value="/resources/img/time.png"/>" class="icono-input" alt="time">
                 </span>
             </div>
             <form:input path="time" cssClass="form-control mr-1" id="timeInput"/>
+            <form:errors path="time" cssClass="form-control is-invalid"/>
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon3">
                     <img src="<c:url value="/resources/img/people.png"/>" class="icono-input" alt="people">
                 </span>
             </div>
             <form:input path="personas" cssClass="form-control" id="personasInput"/>
+            <form:errors path="personas" cssClass="form-control is-invalid"/>
         </div>
         <div class="input-group mb-1">
             <div class="input-group-prepend">
@@ -46,6 +49,7 @@
                 </button>
             </div>
             <form:input path="location" cssClass="form-control" id="localizacion"/>
+            <form:errors path="location" cssClass="form-control is-invalid"/>
         </div>
         <div class="row button">
             <div class="col-lg-8 offset-sm-2 boton">
