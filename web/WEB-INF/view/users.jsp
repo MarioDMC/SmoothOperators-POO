@@ -89,13 +89,8 @@
 </tr>
 </main>
 
-<style>
-    .error { color : red ;}
-</style>
-
-
 <div class="form-popup" id="myForm">
-    <form:form method="post" modelAttribute="userForm" action="userprocess">
+    <form:form method="POST"  action="addUser">
 
         <label><b>Nombre</b></label>
         <form:input path="name" type="text" />

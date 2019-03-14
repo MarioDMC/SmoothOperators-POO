@@ -4,18 +4,19 @@ import javax.validation.constraints.Size;
 
 
 public class User {
+
     @NotNull()
     @Size( min = 1, message = "is requiered")
-    public String name;
+    private String name;
     @NotNull()
     @Size( min = 1, message = "is requiered")
-    public String email;
+    private String email;
     @NotNull()
     @Size( min = 1, message = "is requiered")
-    public  String pswd;
+    private  String pswd;
     @NotNull()
     @Size( min = 1, message = "is requiered")
-    public  String tel;
+    private   String tel;
 
     public String getName() {
         return name;

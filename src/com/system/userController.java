@@ -1,35 +1,33 @@
-package com.unid201920;
+package com.system;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
-@Controller
-@RequestMapping("/customer")
 public class userController {
 
-    @RequestMapping ( "/users" )
-    public String showForm(Model theModel){
-        theModel.addAttribute("user", new User() );
+    @RequestMapping("/users")
+    public String User(
+            @Valid @ModelAttribute("user") User theUser, BindingResult theBindingResult
+    ) {
+        if (theBindingResult.hasErrors()) {
+            return "users";
+        } else {
+            return "users";
+        }
+    }
 
+    @RequestMapping(value = "/addUser", method = RequestMethod.POST)
+    public String addUser(@ModelAttribute("SpringWeb")User user,
+                          Model Themodel) {
+        Themodel.addAttribute("name", user.getName());
+        Themodel.addAttribute("pswd", user.getPswd());
+        Themodel.addAttribute("email", user.getEmail());
+        Themodel.addAttribute("tel", user.getTel());
         return "users";
     }
-
-    @RequestMapping("/processForm")
-    public String processForm(
-            @Valid @ModelAttribute("customer") Customer theCustomer
-            , BindingResult theBindingResult
-    ){
-        if (theBindingResult.hasErrors()) {
-            return "customer-form";
-        } else {
-            return "customer-validation";
-        }
-
-    }
-
 }

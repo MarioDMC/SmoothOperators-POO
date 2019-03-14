@@ -30,7 +30,7 @@ public class DbController implements Controller {
 
         }
 
-        return new ModelAndView("index", map);
+        return new ModelAndView("check", map);
 
     }
 }

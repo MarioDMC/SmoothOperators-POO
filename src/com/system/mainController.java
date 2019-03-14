@@ -2,22 +2,19 @@ package com.system;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import javax.validation.Valid;
 
 @Controller
 public class mainController {
 
-    @RequestMapping("/")
+    @RequestMapping("/check")
     public String index(){
-        return "index";
+        return "check";
     }
 
     @RequestMapping("/form")
@@ -41,16 +38,16 @@ public class mainController {
 
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("/")
     public String login(){
         return "login";
 
     }
-
 
     @RequestMapping("/tablesmap")
     public String tablesMap(){
         return "tablesmap";
 
     }
+
 }
