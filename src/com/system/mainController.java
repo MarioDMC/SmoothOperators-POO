@@ -15,6 +15,11 @@ import java.util.List;
 @Controller
 public class mainController {
 
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
+
     @RequestMapping("/form")
     public String form(HttpServletRequest request, Model model){
         return "form";
@@ -36,17 +41,13 @@ public class mainController {
 
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/login")
     public String login(){
         return "login";
 
     }
 
-    @RequestMapping("/users")
-    public String users(){
-        return "users";
 
-    }
     @RequestMapping("/tablesmap")
     public String tablesMap(){
         return "tablesmap";

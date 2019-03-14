@@ -1,4 +1,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="es-MX">
@@ -46,32 +48,26 @@
             <td><%--@declare id="check"--%><label for="check"><input type="checkbox" name=""></label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
-                   Administrador
                 </label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
-                    Admin@smoothoperators.com.mx
                 </label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
-                    07/02/2019
                 </label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
-                Administrador
                 </label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
                     <a href="" class="btn btn-success btn-outline btn-sm m-l-xs pj-table-icon-edit">
                     <img src="<c:url value="/resources/img/check.png"/>" class="icon" alt="icon.pnh">
-                        Activo
                     </a>
                 </label></td>
             <td class="pj-table-cell-editable"><span class="pj-table-cell-label" style="display: none;">1</span>
                 <label>
                     <a href="" class="btn btn-success btn-outline btn-sm m-l-xs pj-table-icon-edit">
                         <img src="<c:url value="/resources/img/bloquear.png"/>" class="icon" alt="bloquear.png" >
-                        Desbloqueado
                     </a>
                 </label></td>
             <td></td>
@@ -93,25 +89,28 @@
 </tr>
 </main>
 
-<div class="form-popup" id="myForm">
-    <form action="" class="form-container">
+<style>
+    .error { color : red ;}
+</style>
 
+
+<div class="form-popup" id="myForm">
+    <form:form method="post" modelAttribute="userForm" action="userprocess">
 
         <label><b>Nombre</b></label>
-        <input type="text" placeholder="Ingrese Nombre" name="name" required>
-
+        <form:input path="name" type="text" />
+        <form:errors path="name" />
         <label><b>Email</b></label>
-        <input type="email" placeholder="Ingrese Email" name="email" required>
-
+        <form:input path="email" type="email" />
+        <form:errors path="email" />
         <label><b>Contraseña</b></label>
-        <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
-
+        <form:password path="pswd" type="email" />
+        <form:errors path="pswd" />
         <label><b>Telefono</b></label>
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ingrese Telefono" name="tel" required>
-
+        <form:input path="tel" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  />
         <button type="submit" class="btn">Añadir</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
-    </form>
+    </form:form>
 </div>
 </div>
 </body>

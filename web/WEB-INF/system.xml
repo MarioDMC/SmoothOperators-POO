@@ -24,6 +24,17 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <bean id="dmds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://smoothoperators.com.mx:3306/smoothop_segundo_parcial" />
+        <property name="username" value="smoothop_db" />
+        <property name="password" value="Goodluck13" />
+    </bean>
+
+    <bean name="/checkConnection.htm" class="com.system.DbController">
+        <property name="dataSource" ref="dmds"></property>
+    </bean>
+
     <mvc:resources mapping="/resources/**" location="/resources/" />
 
 
