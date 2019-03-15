@@ -1,16 +1,30 @@
 package com.system;
 
+import com.sun.istack.internal.NotNull;
+
+import javax.validation.constraints.Size;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 
 public class WorkingTimes {
 
+    @NotNull()
     private String openTime;
+
+    @NotNull()
     private String closeTime;
+
+    @NotNull()
     private boolean notOpen;
+
+    @NotNull()
     private String descripcion;
+
+    @NotNull()
     private LinkedHashMap<String,String> abierto;
+
+    @NotNull()
     private LinkedHashMap<String,String> cerrado;
 
     public WorkingTimes() {
